@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ram Bhavan Poultry Farm</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f8f2;
+    color:#222;
+}
+
+/* HEADER */
+header{
+    background:#145a20;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:8px;
+    font-size:18px;
+}
+
+/* NAVIGATION */
+nav{
+    background:#218c32;
+    padding:14px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin:8px 12px;
+    display:inline-block;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:#dff2d8;
+}
+
+.hero h2{
+    color:#145a20;
+    font-size:32px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:15px auto;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.button{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:13px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* SECTIONS */
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:45px 20px;
+}
+
+section h2{
+    text-align:center;
+    color:#145a20;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 12px #ccc;
+}
+
+.card h3{
+    color:#218c32;
+    margin-bottom:12px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+/* CALCULATOR */
+.calculator{
+    background:white;
+    max-width:650px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px #ccc;
+}
+
+.calculator label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.calculator input{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border:2px solid #218c32;
+    border-radius:7px;
+    font-size:16px;
+}
+
+.calculate-btn{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#218c32;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.calculate-btn:hover{
+    background:#145a20;
+}
+
+.result{
+    margin-top:25px;
+    padding:20px;
+    background:#e8f5e9;
+    border-radius:10px;
+    line-height:2;
+    font-size:17px;
+}
+
+.profit{
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 3px 12px #ccc;
+    padding:30px;
+}
+
+.phone{
+    font-size:25px;
+    color:#145a20;
+    font-weight:bold;
+    margin:15px;
+}
+
+/* FOOTER */
+footer{
+    background:#145a20;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:20px;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:30px;
+    }
+
+    .hero h2{
+        font-size:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>🐔 Ram Bhavan</h1>
+    <p>Poultry Farm Management</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#feed">Feed</a>
+    <a href="#chicks">Chicks</a>
+    <a href="#eggs">Eggs</a>
+    <a href="#calculator">🧮 Calculator</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+
+    <h2>Welcome to Ram Bhavan Poultry Farm</h2>
+
+    <p>
+        A simple poultry farming website to manage
+        chickens, chicks, eggs, feed and farm expenses.
+    </p>
+
+    <a href="#calculator" class="button">
+        🧮 Open Poultry Calculator
+    </a>
+
+</div>
+
+
+<!-- FEED -->
+<section id="feed">
+
+<h2>🌾 Chicken Feed</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🐣 Starter Feed</h3>
+<p>
+Used for young chicks. Choose feed according
+to the age and type of poultry.
+</p>
+</div>
+
+<div class="card">
+<h3>🐔 Grower Feed</h3>
+<p>
+Used while chickens are growing.
+A balanced diet supports healthy growth.
+</p>
+</div>
+
+<div class="card">
+<h3>🥚 Layer Feed</h3>
+<p>
+Feed designed for laying birds should provide
+appropriate nutrients for egg production.
+</p>
+</div>
+
+<div class="card">
+<h3>💧 Clean Water</h3>
+<p>
+Always provide clean and fresh drinking water
+to the birds.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CHICKS -->
+<section id="chicks">
+
+<h2>🐣 Chicks</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Number of Chicks</h3>
+<p>
+Enter the number of chicks in the calculator
+to estimate your farm costs.
+</p>
+</div>
+
+<div class="card">
+<h3>Chick Price</h3>
+<p>
+Enter the price of one chick to calculate
+the total chick purchase cost.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EGGS -->
+<section id="eggs">
+
+<h2>🥚 Eggs</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Egg Production</h3>
+<p>
+Enter the number of eggs produced and
+the selling price to calculate your sales.
+</p>
+</div>
+
+<div class="card">
+<h3>Egg Sales</h3>
+<p>
+Keep a daily record of eggs produced,
+sold and remaining.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CALCULATOR -->
+<section id="calculator">
+
+<h2>🧮 Poultry Farm Calculator</h2>
+
+<div class="calculator">
+
+<label>🐔 Number of Chicks</label>
+<input type="number" id="chicks" placeholder="Example: 100">
+
+<label>💰 Price of One Chick (₹)</label>
+<input type="number" id="chickPrice" placeholder="Example: 40">
+
+<label>🌾 Feed Used (kg)</label>
+<input type="number" id="feedKg" placeholder="Example: 50">
+
+<label>💰 Feed Price per kg (₹)</label>
+<input type="number" id="feedPrice" placeholder="Example: 35">
+
+<label>🥚 Eggs Sold</label>
+<input type="number" id="eggsSold" placeholder="Example: 80">
+
+<label>💰 Selling Price of One Egg (₹)</label>
+<input type="number" id="eggPrice" placeholder="Example: 6">
+
+<button class="calculate-btn" onclick="calculate()">
+    Calculate
+</button>
+
+<div class="result" id="result">
+    Enter your farm information and press Calculate.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+<h2>📞 Contact Ram Bhavan</h2>
+
+<div class="contact">
+
+<h3>🐔 Ram Bhavan Poultry Farm</h3>
+
+<p>For poultry farm information and enquiries:</p>
+
+<div class="phone">
+📱 9009472336
+</div>
+
+<a class="button" href="tel:9009472336">
+    📞 Call Ram Bhavan
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<p>© 2026 Ram Bhavan Poultry Farm</p>
+<p>🐔 Better Farming • Better Management</p>
+
+</footer>
+
+
+<script>
+
+function calculate(){
+
+    let chicks =
+        Number(document.getElementById("chicks").value) || 0;
+
+    let chickPrice =
+        Number(document.getElementById("chickPrice").value) || 0;
+
+    let feedKg =
+        Number(document.getElementById("feedKg").value) || 0;
+
+    let feedPrice =
+        Number(document.getElementById("feedPrice").value) || 0;
+
+    let eggsSold =
+        Number(document.getElementById("eggsSold").value) || 0;
+
+    let eggPrice =
+        Number(document.getElementById("eggPrice").value) || 0;
+
+
+    // Calculations
+    let chickCost = chicks * chickPrice;
+
+    let feedCost = feedKg * feedPrice;
+
+    let eggSales = eggsSold * eggPrice;
+
+    let totalCost = chickCost + feedCost;
+
+    let profit = eggSales - totalCost;
+
+
+    document.getElementById("result").innerHTML =
+
+        "🐣 Chick Cost: ₹" + chickCost.toFixed(2) + "<br>" +
+
+        "🌾 Feed Cost: ₹" + feedCost.toFixed(2) + "<br>" +
+
+        "🥚 Egg Sales: ₹" + eggSales.toFixed(2) + "<br>" +
+
+        "💰 Total Cost: ₹" + totalCost.toFixed(2) + "<br>" +
+
+        "<span class='profit'>📊 Profit/Loss: ₹" +
+        profit.toFixed(2) +
+        "</span>";
+
+}
+
+</script>
+
+</body>
+</html>
